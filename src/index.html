@@ -6,7 +6,37 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <section>
+      <!--insertando el titulo de la aplicación web -->
+      <h1>Cifrado César</h1> 
+      <!--insertando una breve descripción de la aplicación web -->
+      <h3>Con esta aplicación aplicación web podrás enviar mensajes cifrados.</h3>
+      <!--insertando un contenedor para el mensaje que se ingresará -->
+      <div style='float:left;'> 
+          <!--insertando elemento para la interfaz de usuario -->
+          <label>Inserta tu mensaje:</label>
+          <br> <!--insertando salto de línea -->
+          <!--insertando área de texto el usuario ingrese su mensaje -->
+          <textarea name ='' id='message' placeholder='Inserta tu mensaje aquí'></textarea>
+      </div>
+      <!--insertando un contenedor para los botones-->
+      <div style='float:left;'> <br><br>
+          <!--insertando elemento para la interfaz de usuario -->
+          <label>Ingresa un número:</label> <br>
+           <!--insertando un campo para que el usuario ingrese un número de desplazamiento -->
+          <input type="number" id="offSet" min="0"><br>
+          <!--insertando botón para cifrar -->
+          <input type="button" value="click" id="buttonCode"><br>
+      </div>
+      <!--insertando un contenedor que muestre el resultado-->
+      <div style='float:left;'>  
+          <!--insertando elemento para la interfaz de usuario -->
+          <label>Tu mensaje es:</label>
+          <br>
+          <!--insertando área de texto donde se imprimirá el resultado-->   
+          <textarea name="" id='myStringCipher'></textarea>
+      </div>
+    </section> 
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

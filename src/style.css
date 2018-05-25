@@ -1,0 +1,31 @@
+/* Estilo de la sección */
+section {
+    margin: auto;
+    width: 90%;
+    padding: 20px;
+}
+
+/* Estilo de los encabezados */
+h1, h3 {
+    text-align: center;
+}
+
+/* Estilo de los contenedores*/
+div {
+    padding: 20px;
+    display: inline-block;
+    
+}
+
+/* Estilo del área de texto */
+textarea {
+    width: 400px;
+    height: 100px;
+    margin: 10px 0 10px 0;
+}
+
+/* Estilo de los botones */
+input {
+    padding: 4px;
+    margin: 10px 0 10px 0;
+}
