@@ -14,18 +14,17 @@ h1, h3 {
 div {
     padding: 20px;
     display: inline-block;
-    
+    margin: 20 px auto; /*estocentraaaa ejm gaby flexbox css tricks or css tricks, flexbbox*/
 }
 
 /* Estilo del área de texto */
 textarea {
-    width: 400px;
+    width: 300px;
     height: 100px;
     margin: 10px 0 10px 0;
 }
 
 /* Estilo de los botones */
 input {
-    padding: 4px;
-    margin: 10px 0 10px 0;
+    width: 45px;
 }
