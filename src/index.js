@@ -7,7 +7,7 @@ const result = document.getElementById("my_result"); // almacenar el bottón que
 
 //Agregando evento: Botón cifrar
 const encoded = () => { 
-  result.innerHTML = window.cipher.encode(myOffset.value,myString.value);
+  result.value = window.cipher.encode(myOffset.value,myString.value);
 }
 buttonEncode.addEventListener("click", encoded); //Al escuchar el click del botón, ejecutar la función cifrar
 
