@@ -1,6 +1,6 @@
 ///METODO CIFRAR  
 window.cipher = {
-  //Declarando función para descifrar una cadena de texto
+  //Declarando función para cifrar una cadena de texto
   encode: (offset,string) => {
     let key = parseInt(offset);
     let space = "";
@@ -20,6 +20,7 @@ window.cipher = {
     return myResult;
   },
   ///METODO DESCIFRAR 
+  //Declarando función para descifrar una cadena de texto
   decode: (offset,string) => {
     let key = parseInt(offset);
     let space = "";
