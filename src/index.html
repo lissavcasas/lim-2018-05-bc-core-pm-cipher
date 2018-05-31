@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <title>Caesar Cipher</title>
-    <link rel='stylesheet' href='style.css' />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section>
@@ -12,25 +12,25 @@
       <!--insertando una breve descripción de la aplicación web -->
       <h3>Con esta aplicación aplicación web podrás enviar mensajes cifrados.</h3>
       <!--insertando un contenedor para el mensaje que se ingresará -->
-      <div id='root'> 
-          <label for='my_string'>Inserta tu mensaje:</label><br> <!--insertando salto de línea -->
-          <textarea id='my_string' placeholder='Inserta tu mensaje aquí'></textarea>
+      <div id="root"> 
+          <label for="my_string">Inserta tu mensaje:</label><br> <!--insertando salto de línea -->
+          <textarea id="my_string" placeholder="Inserta tu mensaje aquí"></textarea>
       </div>
       <!--insertando un contenedor para los botones-->
-      <div id='buttons'> <br><br>
-          <label for='key_number'>Ingresa un número:</label><br>
-          <input id='key_number' type='number' min='0'><br>
-          <button id='button_decoder'>Cifrar</button><br>
-          <button id='button_encoder'>Descifrar</button><br>  
+      <div id="buttons"> <br><br>
+          <label for="key_number">Ingresa un número:</label><br>
+          <input id="key_number" type="number" min="0"><br>
+          <button id="button_encoder">Cifrar</button><br>
+          <button id="button_decoder">Descifrar</button><br>  
       </div>
       <!--insertando un contenedor que muestre el resultado-->
-      <div id='results'>  
-          <label for='my_result'>Tu mensaje es:</label><br>
+      <div id="results">  
+          <label for="my_result">Tu mensaje es:</label><br>
           <!--insertando un contenedor donde se imprimirá el resultado-->   
-          <textarea id='my_result'></textarea>
+          <textarea id="my_result"></textarea>
       </div>
     </section> 
-    <script src='cipher.js'></script>
-    <script src='index.js'></script>
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
