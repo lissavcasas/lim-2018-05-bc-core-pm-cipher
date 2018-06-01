@@ -14,17 +14,15 @@ describe('cipher', () => {
       let result = cipher.encode(33,"ABCDEFGHIJKLMNOPQRSTUVWXYZ");
       assert.equal(result, "HIJKLMNOPQRSTUVWXYZABCDEFG");
     });
-  });
 
-  describe('cipher.decode', () => {
-
-    it('debería ser una función', () => {
-      assert.equal(typeof cipher.decode, 'function');
+    it('debería retornar "hijklmnopqrstuvwxyzabcdefg" para "abcdefghijklmnopqrstuvwxyz" con offest 33', () => {
+      let result= cipher.encode(33,"abcdefghijklmnopqrstuvwxyz");
+      assert.equal(result, "hijklmnopqrstuvwxyzabcdefg");
     });
 
-    it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offest 33', () => {
-      let result = cipher.decode(33,"HIJKLMNOPQRSTUVWXYZABCDEFG");
-      assert.equal(result, "ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+    it('debería retornar "0123456789;.-_¿?¡!=+´" para "0123456789;.-_¿?¡!=+´" con offest 33', () => {
+      let result= cipher.encode(33,"0123456789;.-_¿?¡!=+´");
+      assert.equal(result, "0123456789;.-_¿?¡!=+´");
     });
   });
 
@@ -38,20 +36,22 @@ describe('cipher', () => {
       let result = cipher.decode(33,"HIJKLMNOPQRSTUVWXYZABCDEFG");
       assert.equal(result, "ABCDEFGHIJKLMNOPQRSTUVWXYZ");
     });
-  });
-  cons 
-  //else if(asciiCharacter >= 97 && asciiCharacter <= 122) { //preguntar si es una letra minúscula en el código ASCII//
-  //for(let i = 0; i < string.length; i++) {
 
-
-  describe('cipher.createCipherWithOffset', () => {
-
-    xit('debería ser una función', () => {
-      assert.equal(typeof cipher.createCipherWithOffset, 'function');
+    it('debería retornar "hijklmnopqrstuvwxyzabcdefg" para "abcdefghijklmnopqrstuvwxyz" con offest 33', () => {
+        let result= cipher.decode(33,"hijklmnopqrstuvwxyzabcdefg");
+        assert.equal(result, "abcdefghijklmnopqrstuvwxyz");
     });
 
-    it('debería retornar un objeto con dos funciones (encode y decode) con offset fijado');
-
+    it('debería retornar "0123456789;.-_¿?¡!=+´" para "0123456789;.-_¿?¡!=+´" con offest 33', () => {
+      let result= cipher.decode(33,"0123456789;.-_¿?¡!=+´");
+      assert.equal(result, "0123456789;.-_¿?¡!=+´");
+    });
   });
-
-});
+  });
+  
+  //describe('cipher.createCipherWithOffset', () => {
+    //it('debería ser una función', () => {
+      //assert.equal(typeof cipher.createCipherWithOffset, 'function');
+    //('debería retornar un objeto con dos funciones (encode y decode) con offset fijado');
+    //});
+  //});
