@@ -1,6 +1,6 @@
-///METODO CIFRAR  
+//OBJETO GLOBAL WINDOW
 window.cipher = {
-  //Declarando función para descifrar una cadena de texto
+  ///METODO CIFRAR: Declarando función para cifrar una cadena de texto
   encode: (offset,string) => {
     let key = parseInt(offset);
     let space = "";
@@ -14,12 +14,12 @@ window.cipher = {
         space = (asciiCharacter - 97 + key) %26 + 97;
       } else {
         space = asciiCharacter;
-      } 
-        myResult += String.fromCharCode(space);
+      } myResult += String.fromCharCode(space);
     } 
-    return myResult;
+    return myResult; // retornar el resultado del mensaje del usuario
   },
-  ///METODO DESCIFRAR 
+
+  ///METODO DESCIFRAR: Declarando función para descifrar una cadena de texto
   decode: (offset,string) => {
     let key = parseInt(offset);
     let space = "";
@@ -33,10 +33,9 @@ window.cipher = {
         space = (asciiCharacter - 97 - key + 26*2) %26 + 97;
       } else {
         space = asciiCharacter
-      } 
-        myResult += String.fromCharCode(space);
+      } myResult += String.fromCharCode(space);
     } 
-    return myResult;
+    return myResult; // retornar el resultado del mensaje del usuario
   }
-//createCipherWithOffset: () => {
+//createCipherWithOffset: () => {}
 };
