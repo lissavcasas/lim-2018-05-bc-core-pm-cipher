@@ -9,10 +9,10 @@ window.cipher = {
     for(let i = 0; i < string.length; i++) {  // recorrer el string del usuario
       let asciiCharacter = string.charCodeAt(i); //convertir el string del usuario en un caracter ASCII
       if(asciiCharacter >= 65 && asciiCharacter <= 90) { //preguntar si es una letra mayúscula en el código ASCII
-        space = (asciiCharacter - 65 + key) %26 + 65; //obtener el número de la letra en el codigo ASCII
+        space = (asciiCharacter - 65 + key) %26 + 65; 
       } else if(asciiCharacter >= 97 && asciiCharacter <= 122) { //preguntar si es una letra minúscula en el código ASCII 
-        space = (asciiCharacter - 97 + key) %26 + 97; //obtener el número de la letra en el codigo ASCII
-      } else { // verficar si no se cumple las condiciones anteriores
+        space = (asciiCharacter - 97 + key) %26 + 97; 
+      } else {
         space = asciiCharacter; //si no es mayuscula, ni minúscula, imprimir el mismo caracter ingresado.
       } myResult += String.fromCharCode(space); //almacenar el resultado del cifrado y convertirlo en string
     } 
@@ -28,10 +28,10 @@ window.cipher = {
     for(let i = 0; i < string.length; i++) {  // recorrer el string del usuario
       let asciiCharacter = string.charCodeAt(i); //convertir el string del usuario en un caracter ASCII
       if(asciiCharacter >= 65 && asciiCharacter <= 90) { //preguntar si es una letra mayúscula en el código ASCII
-        space = (asciiCharacter - 65 - key + 26*2) %26 + 65; //obtener el número de la letra en el codigo ASCII
+        space = (asciiCharacter - 65 - key + 26*2) %26 + 65; 
       } else if(asciiCharacter >= 97 && asciiCharacter <= 122) { //preguntar si es una letra minúscula en el código ASCII 
-        space = (asciiCharacter - 97 - key + 26*2) %26 + 97; //obtener el número de la letra en el codigo ASCII
-      } else { // verficar si no se cumple las condiciones anteriores
+        space = (asciiCharacter - 97 - key + 26*2) %26 + 97;
+      } else { 
         space = asciiCharacter //si no es mayuscula, ni minúscula, imprimir el mismo caracter ingresado.
       } myResult += String.fromCharCode(space); ////almacenar el resultado del descifrado y convertirlo en string
     } 
