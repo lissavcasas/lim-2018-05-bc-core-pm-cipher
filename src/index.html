@@ -1,35 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <section>
-      <!--insertando el titulo de la aplicación web -->
-      <h1>Cifrado César</h1> 
-      <!--insertando una breve descripción de la aplicación web -->
-      <h3>Con esta aplicación web podrás enviar mensajes cifrados.</h3>
-      <!--insertando un contenedor para el mensaje que se ingresará -->
-      <div id="root"> 
-          <label for="my_string">Inserta tu mensaje aquí:</label><br> <!--insertando salto de línea -->
-          <textarea id="my_string" placeholder="Inserta tu mensaje aquí"></textarea>
+    <div id="home" class="home">
+      <button class="buttonCD" id="button_start"> Empezar </button> 
+    </div>
+    <!--insertando contenedor que oculta el contenido para luego mostrarlo -->
+    <div id="hidden">
+      <div class="main">
+        <div class="container">
+          <div class="buttons">
+            <!--insertando un contenedor para el título de la aplicación-->
+            <div class="container_title"> 
+              <h1>Whatsapp Cipher</h1> 
+              <!--insertando un contenedor para el mensaje que se ingresará -->
+              <div class="textarea"> 
+                <label for="my_string">Inserta tu mensaje:</label><br> 
+                <textarea class="input100" id="my_string" placeholder="Inserta tu mensaje aquí"></textarea>
+              </div>
+              <!--insertando un contenedor para el offset-->
+              <div class="textarea"> 
+                <label for="key_number">Ingresa un número:</label><br>
+                <input class ="input100_1" id="key_number" type="number" min="0">
+              </div>
+              <!--insertando un contenedor para los botones-->
+              <div class="buttons">
+                <button class="buttonCD" type="button" id="button_encoder"> Cifrar </button>
+                <button class="buttonCD" type="button" id="button_decoder"> Descifrar </button>
+              </div> 
+              <!--insertando un contenedor donde se imprimirá el resultado-->
+              <div class="textarea">  
+                  <label for="my_result">Tu mensaje secreto es:</label><br>
+                  <textarea id="my_result" readonly></textarea>
+                </div>
+            </div>
+          </div> 
+        </div>
       </div>
-      <!--insertando un contenedor para los botones-->
-      <div id="buttons"> <br><br>
-          <label for="key_number">Ingresa un número:</label><br>
-          <input id="key_number" type="number" min="0"><br>
-          <button id="button_encoder">Cifrar</button><br>
-          <button id="button_decoder">Descifrar</button><br>  
+    </div>
+    <!--insertando un pie de página-->
+    <footer>
+      <div class="container">
+        <p class="copy">  <p> Made by <strong>Melissa Casas</strong> &copy; 2018</p>
       </div>
-      <!--insertando un contenedor que muestre el resultado-->
-      <div id="results">  
-          <label for="my_result">Tu mensaje es:</label><br>
-          <!--insertando un contenedor donde se imprimirá el resultado-->   
-          <textarea id="my_result"></textarea>
-      </div>
-    </section> 
+    </footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
