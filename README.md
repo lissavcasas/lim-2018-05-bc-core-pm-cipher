@@ -31,6 +31,3 @@ Si deseas descifrar un mensaje, haz clic en el botón “*Descifrar*”.
 
 ## Diseño del producto
 Revisa aquí más detalles sobre el [diseño y definición del producto](https://docs.google.com/presentation/d/1KPdW96hCGWXhnXHPdrvYO0xJxqM_SxVGaQ34P6nZirw/edit#slide=id.g3e9ad4f439_0_197).
-
-
-
