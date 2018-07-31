@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-    <div id="home" class="home">
-      <button class="buttonCD" id="button_start"> Empezar </button> 
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <!--Vista de inicio de la app-->
+  <div id="home" class="home">
+    <button class="enter" id="button-start">Empezar</button>
+  </div>
+  <!--Página principal de la app-->
+  <div id="hidden" class="hidden">
+    <div class="container">
+      <main class="main-container">
+        <!--sección para el título de la aplicación-->
+        <section class="container_title">
+          <h1>Whatsapp Cipher</h1>
+        </section>
+        <!--sección para el mensaje que se ingresará -->
+        <section class="textarea">
+          <label for="my-string">Inserta tu mensaje:</label><br>
+          <textarea id="my-string" placeholder="Inserta tu mensaje aquí"></textarea>
+        </section>
+        <!--sección para el offset-->
+        <section class="textarea">
+          <label for="key-number">Ingresa un número:</label><br>
+          <input id="key-number" type="number" min="0">
+        </section>
+        <!--sección para los botones-->
+        <section class="buttons">
+          <button class="buttonCD" type="button" id="button-encoder"> Cifrar </button>
+          <button class="buttonCD" type="button" id="button-decoder"> Descifrar </button>
+        </section>
+        <!--sección donde se imprimirá el resultado cifrado/descifrado-->
+        <section class="textarea">
+          <label for="my-result">Tu mensaje secreto es:</label>
+          <br>
+          <textarea id="my-result" readonly></textarea>
+        </section>
+        <!--insertando un pie de página-->
+        <footer>
+          <div class="main-container">
+            <p class="copy"> Made by
+              <strong>Melissa Casas</strong> &copy; 2018</p>
+          </div>
+        </footer>
+      </main>
     </div>
-    <!--insertando contenedor que oculta el contenido para luego mostrarlo -->
-    <div id="hidden">
-      <div class="main">
-        <div class="container">
-          <div class="buttons">
-            <!--insertando un contenedor para el título de la aplicación-->
-            <div class="container_title"> 
-              <h1>Whatsapp Cipher</h1> 
-              <!--insertando un contenedor para el mensaje que se ingresará -->
-              <div class="textarea"> 
-                <label for="my_string">Inserta tu mensaje:</label><br> 
-                <textarea class="input100" id="my_string" placeholder="Inserta tu mensaje aquí"></textarea>
-              </div>
-              <!--insertando un contenedor para el offset-->
-              <div class="textarea"> 
-                <label for="key_number">Ingresa un número:</label><br>
-                <input class ="input100_1" id="key_number" type="number" min="0">
-              </div>
-              <!--insertando un contenedor para los botones-->
-              <div class="buttons">
-                <button class="buttonCD" type="button" id="button_encoder"> Cifrar </button>
-                <button class="buttonCD" type="button" id="button_decoder"> Descifrar </button>
-              </div> 
-              <!--insertando un contenedor donde se imprimirá el resultado-->
-              <div class="textarea">  
-                  <label for="my_result">Tu mensaje secreto es:</label><br>
-                  <textarea id="my_result" readonly></textarea>
-                </div>
-            </div>
-          </div> 
-        </div>
-      </div>
-    </div>
-    <!--insertando un pie de página-->
-    <footer>
-      <div class="container">
-        <p class="copy"> Made by <strong>Melissa Casas</strong> &copy; 2018</p>
-      </div>
-    </footer>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+  </div>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
 </html>

@@ -10,22 +10,25 @@
 body {
     background-color: #ece5dd;
     font-family: 'Quicksand', sans-serif;
-	font-size: 14px;
+	font-size: 25px;
 	font-weight: 400;
     text-align: center;
     width: 100%;
 }
 	
 .home {
+    background-color: #075e54;
     display:block;
 	background-image:url("img/font.jpg");
-    background-size: 100%;
+    /* background-size: 100% 100%; */
+    background-repeat: no-repeat;
+    background-position: center top;
     width: 100%;
     min-height: 100%;
     height: auto !important;
-    position: fixed;
+    position: absolute;
     top:0; 
-    left:0;
+    left:0%;
     text-align: center;
 }
 
@@ -45,7 +48,7 @@ body {
 }
 
 .button:hover {
-    background-color: #ddd;
+    background: #ddd;
     color: black;
     border-radius: 9px;
 }
@@ -62,7 +65,13 @@ body, html {
 	font-family: 'Quicksand', sans-serif;
 }
 
-#hidden {
+h1 {
+    font-size: 160%;
+    padding: 20px;
+}
+
+
+.hidden {
     width: 100%;
     margin: 0 auto;
     display: none; 
@@ -70,8 +79,11 @@ body, html {
     color: #11100e;
 }
 
-.main {
-    width: 100%;  
+.container {
+    right: 15%;
+    left: 15%;
+    width: 70%; 
+    height: 90%;
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -83,7 +95,7 @@ body, html {
     z-index: 1;
 }
 
-.main::before {
+.container::before {
     content: "";
     display: block;
     position: absolute;
@@ -95,23 +107,17 @@ body, html {
     background-position: center;
 }
 
-.container {
+.main-container {
     width: 100%;
     background:  #fff;
     border-radius: 4px;
     overflow: hidden;
 }
 
-.buttons {
-    width: 100%;  
-    background-position: center;  
-    padding: 10px;
-}
-
 .container-title {
     font-family: 'Quicksand', sans-serif;
     font-size: 30px;
-    color: #333333;
+    color: white;
     line-height: 1.2;
     text-align: center;
     width: 100%;
@@ -121,10 +127,11 @@ body, html {
 input, textarea {
     position: relative;
     width: 100%;
+    height: 60px;
     z-index: 1;
     padding: 10px;
     font-family: 'Bree Serif', serif;
-    font: 1em;
+    font-size: 25px;
     box-sizing: border-box;
     color: #ffffff;
     background-color: #075e54;
@@ -151,6 +158,31 @@ buttons {
     padding: 10px;
 }
   
+.enter {
+    position: fixed;
+    bottom: 0%;
+    border-radius: #dcf8c6;
+    display: flex;
+    font-family: 'Bree Serif', serif;
+    color: black;
+    font-size: 25px;
+    width: 100%;
+    line-height: 1.5;
+    height: 62px;
+    border-radius: #dcf8c6;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.enter:hover {
+    background: orange;
+}
+
 .buttonCD {
     font-family: 'Bree Serif', serif;
     font-size: 25px;
@@ -176,3 +208,11 @@ buttons {
 footer {
     width: 100%;
 }
+
+/* @media (max-width: 480px) {
+    .wrap-login100 {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+   */
