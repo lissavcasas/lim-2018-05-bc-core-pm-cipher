@@ -29,4 +29,8 @@ Si deseas descifrar un mensaje, haz clic en el botón “*Descifrar*”.
 
 6.	En el recuadro  “Tu mensaje secreto es” visualizarás tu mensaje cifrado o descifrado, según la opción que hayas elegido.
 
-Revisa más sobre el [diseño y definición del producto](https://docs.google.com/presentation/d/1KPdW96hCGWXhnXHPdrvYO0xJxqM_SxVGaQ34P6nZirw/edit#slide=id.g3e9ad4f439_0_197).
+## Diseño del producto
+Revisa aquí más detalles sobre el [diseño y definición del producto](https://docs.google.com/presentation/d/1KPdW96hCGWXhnXHPdrvYO0xJxqM_SxVGaQ34P6nZirw/edit#slide=id.g3e9ad4f439_0_197).
+
+
+
